@@ -7,8 +7,8 @@ public class SqArea {
         return i * h;
     }
 
-    public static void main(String[] args) {
-        double result1 = SqArea.square(6, 2);
-        System.out.println(result1);
-    }
+//    public static void main(String[] args) {
+//        double result1 = SqArea.square(6, 2);
+//        System.out.println(result1);
+//    }
 }
