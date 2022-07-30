@@ -5,9 +5,6 @@ public class ThreeMax {
         int result = third;
         if (first == second || second == third || third == first) {
             System.out.print("Присутствуют равные числа это");
-//                if (first == second && second == third && third == first) {
-//                    result = first;
-//                }
             System.out.print(first == second ? "first & second " : first == third ? " first & third" : "second == third");
             int equal = first == second ? first : first == third ? first : third;
 
