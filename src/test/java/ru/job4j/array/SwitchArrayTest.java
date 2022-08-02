@@ -16,7 +16,7 @@ public class SwitchArrayTest {
 
     @Test
     public void whenSwap2to4() {
-        int[] input = {1, 2, 3, 4 , 10 , 15, 6};
+        int[] input = {1, 2, 3, 4, 10, 15, 6};
         int source = input.length / 2 - 1;
         int dest = input.length / 2;
         int[] result = SwitchArray.swap(input, source, dest);
