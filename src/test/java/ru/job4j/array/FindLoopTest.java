@@ -23,7 +23,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHas2ThenN1() {
+    public void whenArrayHasNot2ThenN1() {
         int[] data = new int[] {5, 10, 3};
         int el = 2;
         int result = FindLoop.indexOf(data, el);
@@ -54,13 +54,24 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenDiapasonHas8ThenN1() {
+    public void whenDiapasonHasNot8ThenN1() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 8;
         int start = 2;
         int finish = 4;
         int result = FindLoop.indexInRange(data, el, start, finish);
         int expected = -1;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenDiapasonHas4Then4() {
+        int[] data = new int[] {5, 2, 10, 2, 4};
+        int el = 4;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 4;
         assertThat(result).isEqualTo(expected);
     }
 }
