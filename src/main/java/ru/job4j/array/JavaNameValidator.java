@@ -6,7 +6,6 @@ public class JavaNameValidator {
         boolean result = true;
         if (name.isEmpty() || isUpperCase(name.charAt(0)) || isDigit(name.charAt(0))) {
             result = false;
-
         } else {
             char[] array = name.toCharArray();
             for (int i = 1; i < array.length; i++) {
