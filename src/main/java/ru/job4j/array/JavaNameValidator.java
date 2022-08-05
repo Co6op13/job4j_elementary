@@ -12,6 +12,7 @@ public class JavaNameValidator {
             for (int i = 1; i < array.length; i++) {
                 if (!(isSpecialSymbol(array[i]) || isUpperLatinLetter(array[i]) || isLowerLatinLetter(array[i]) || isDigit(array[i]))) {
                     result = false;
+                    break;
                 }
             }
         }
