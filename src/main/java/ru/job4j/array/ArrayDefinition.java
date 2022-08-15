@@ -16,7 +16,6 @@ public class ArrayDefinition {
         for (int i = 0; i < names.length; i++) {
             System.out.println(names[i]);
         }
-
         System.out.println();
         for (String i : names) {
             System.out.println(i);
