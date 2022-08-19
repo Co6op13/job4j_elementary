@@ -4,4 +4,8 @@ public class Max {
         return first > second ? first : second;
     }
 
+    public static int max(int first, int second, int third) {
+        int temp = max(first, second);
+        return temp > third ? temp : third;
+    }
 }
