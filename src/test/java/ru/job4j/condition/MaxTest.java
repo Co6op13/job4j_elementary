@@ -10,7 +10,7 @@ public class MaxTest {
         int second = 4;
         int third = 1;
         int result = Max.max(first, second, third);
-        int expected = 5;
+        int expected = 6;
         assertThat(result).isEqualTo(expected);
     }
 
