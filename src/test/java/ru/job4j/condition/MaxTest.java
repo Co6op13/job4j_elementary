@@ -15,6 +15,28 @@ public class MaxTest {
     }
 
     @Test
+    public void whenMax4To111To111to10Then10() {
+        int first = 4;
+        int second = 111;
+        int third = 111;
+        int fourth = 10;
+        int result = Max.max(first, second, third, fourth);
+        int expected = 111;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenMax4To4To1to10Then10() {
+        int first = 4;
+        int second = 4;
+        int third = 1;
+        int fourth = 10;
+        int result = Max.max(first, second, third, fourth);
+        int expected = 10;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
     public void whenMax3To2To1Then3() {
         int first = 3;
         int second = 2;
